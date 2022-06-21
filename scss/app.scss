@@ -1,0 +1,78 @@
+@import './reset';
+body {
+    background-color: hsla(0, 0%, 68%, 0.288);;
+}
+.task-container {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #fff;
+    padding: 0 1%;
+    .task-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: 100;
+        }
+        .task-list {
+            display:block;
+            width: 100%;  
+        }
+    }
+}
+
+input {
+    padding: .5rem .5rem;
+    width: 100%;
+    margin: 1rem 0;
+    font-size: .8rem;
+    border-top: none; border-left: none; border-right: none;
+    border-bottom: .1rem solid black;
+}
+
+.task-btn:hover {
+    background-color: hsl(160, 66%, 53%);
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background-color: aquamarine;
+    border: .1rem solid black;
+    cursor: pointer;
+}
+
+.clear-btn {
+    margin: 1rem 0;
+    background-color: black;
+    color: #fff;
+    width:-moz-fit-content;
+    width: fit-content;
+}
+
+.filter-tasks {
+    .collections {
+        .collection-item {
+            display: flex;
+            justify-content: space-between;
+            color: hsl(0, 0%, 0%);
+            background-color: hsl(0, 4%, 89%);
+            padding: .5rem .5rem;
+            font-size: 1rem;
+            font-weight: 300;
+            margin: .1rem 0;
+            .delete-item {
+                .fa-times{
+                    background-color: black;
+                    color: white;
+                    border: .1rem solid black;
+                    padding: 0 .1rem;
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+            }
+        }
+    }
+}
